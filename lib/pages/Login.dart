@@ -15,7 +15,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("TourPal"),
+          title: const Text("Sri Lankan Camping Guide"),
           backgroundColor: Colors.teal,
         ),
         body: Container(
@@ -62,7 +62,9 @@ class _LoginState extends State<Login> {
                         TextFormField(
                             decoration: InputDecoration(
                               hintText: 'Password',
-                              prefixIcon: Icon(Icons.lock,),
+                              prefixIcon: Icon(
+                                Icons.lock,
+                              ),
                               fillColor: Colors.white12,
                               filled: true,
                               enabledBorder: OutlineInputBorder(
@@ -119,7 +121,6 @@ class _LoginState extends State<Login> {
                       ],
                     ),
                   )
-
                 ])));
   }
 }

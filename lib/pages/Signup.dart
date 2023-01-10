@@ -17,7 +17,7 @@ class _SignupState extends State<Signup> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("TourPal"),
+          title: const Text("Sri Lankan Camping Guide"),
           backgroundColor: Colors.teal,
         ),
         body: Container(
