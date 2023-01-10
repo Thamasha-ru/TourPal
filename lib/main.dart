@@ -35,12 +35,10 @@ class _NewTourPalAppState extends State<NewTourPalApp> {
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
       //initialRoute: Home.routName,
       routes: routes,
-      home: Event(),
-      //home: MyWidget(),
-//       home: Home(
-// isDark: isDark,
-//         toggleDarkMode: toggleDarkMode,
-//       ),
+      //home: Event(),
+      // home: MyWidget(),
+      home: Home(isDark: isDark,toggleDarkMode: toggleDarkMode,
+      ),
     );
   }
 }

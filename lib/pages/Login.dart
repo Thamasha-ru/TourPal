@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/pages/startingPage.dart';
 
 class Login extends StatefulWidget {
   static const routName = "/login";
@@ -97,6 +98,12 @@ class _LoginState extends State<Login> {
                               ),
                               color: Colors.teal,
                               onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const MyWidget()),
+                                );
+
                                 // Validate returns true if the form is valid, or false otherwise.
                                 if (_formKey.currentState!.validate()) {
                                   // If the form is valid, display a snackbar. In the real world,

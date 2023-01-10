@@ -18,31 +18,17 @@ class _MyWidgetState extends State<MyWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Sri Lanka Camping Guid"),
-        ),
+            title: Text("Sri Lanka Camping Guid"),
+            automaticallyImplyLeading: true),
         body: Center(
             child: Column(
           children: const [
             Image(
               image: AssetImage('assets/c2.png'),
-              height: 400,
+              height: 500,
               width: 300,
             ),
-            // ElevatedButton(
-            //             onPressed
-            //             ) {},
-            //             style: ElevatedButton.styleFrom(
-            //               primary: Colors.teal,
-            //               padding: const EdgeInsets.symmetric(
-            //                   horizontal: 50, vertical: 18),
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(30)),
-            //             ),
-            //             child: Text("REQUEST",
-            //                 style: TextStyle(
-            //                     fontSize: 18,
-            //                     letterSpacing: 2,
-            // color: Colors.white)));
+        
             Padding(
               padding: EdgeInsets.all(8.0),
               child: RaisedButton(

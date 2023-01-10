@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:new_flutter/pages/Home.dart';
 import 'package:new_flutter/pages/Login.dart';
 import 'package:new_flutter/pages/Signup.dart';
+import 'package:new_flutter/pages/eventpage.dart';
 import 'package:new_flutter/pages/startingPage.dart';
 
 final Map<String, WidgetBuilder> routes = {
@@ -10,5 +11,6 @@ final Map<String, WidgetBuilder> routes = {
   Login.routName: (context) => const Login(),
   Signup.routName: (context) => const Signup(),
   MyWidget.routName:(context) => const MyWidget(),
+  Event.routName:(context) => Event(),
 
 };

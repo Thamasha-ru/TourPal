@@ -26,7 +26,7 @@ class _SignupState extends State<Signup> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Image(
-                    image: AssetImage('assets/trip6.png'),
+                    image: AssetImage('assets/c5.png'),
                     height: 400,
                     width: 300,
                   ),

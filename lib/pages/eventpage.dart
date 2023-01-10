@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Event extends StatefulWidget {
+  static const routName = "/eventPage";
+
   @override
   _EventState createState() => _EventState();
 }
@@ -124,7 +126,8 @@ class _EventState extends State<Event> {
           decoration: InputDecoration(
               suffixIcon: isPasswordTextField
                   ? IconButton(
-                      icon: const Icon(Icons.remove_red_eye, color: Colors.grey),
+                      icon:
+                          const Icon(Icons.remove_red_eye, color: Colors.grey),
                       onPressed: () {
                         setState(() {
                           // isObscurePasswordTextField =
