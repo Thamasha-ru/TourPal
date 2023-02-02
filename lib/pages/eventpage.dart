@@ -98,7 +98,44 @@ class _EventState extends State<Event> {
                               borderRadius: BorderRadius.circular(30))),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                backgroundColor: Colors.teal,
+                                title: Text(
+                                  'Alert',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white),
+                                ),
+                                content: Text(
+                                  'Event created successfully!',
+                                  style: TextStyle(
+                                      fontSize: 18, color: Colors.white),
+                                ),
+                                actions: <Widget>[
+                                  FlatButton(
+                                    child: Text(
+                                      'Done',
+                                      style: TextStyle(
+                                          fontSize: 18,
+                                          // fontWeight: FontWeight.bold,
+                                          color: Colors.white),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                        },
+                        // child: Text('Press me'),
+
                         style: ElevatedButton.styleFrom(
                           primary: Colors.teal,
                           padding: const EdgeInsets.symmetric(
